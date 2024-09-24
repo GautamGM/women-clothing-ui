@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      
+    }
+  </style>
+  <body>
+    <!-- start here -->
+    <div class="flex justify-center main-conatiner font-[Montserrat]">
+      <!-- header-section -->
+      <header class="fixed left-[0px]">
+        <div
+          class="upper-line-all-order font-[600] flex justify-center items-center h-[25px] bg-[#5A6D57] text-[#FFFFFF] w-screen text-[12px] font-[Montserrat]"
+        >
+          Enjoy Free Shipping On All Orders
+        </div>
+        <div class="navbar px-[40px] pr-[40px]  ">
+          <nav
+            class=" h-[40px]  md:h-[70px] flex justify-between items-center borde bg-[#FFFFFF]"
+          >
+          <div class="humburger-tab md:hidden">
+        <a href="#">
+            <img src="./Images/Style=Two Tone.png" alt="">
+        </a>
+          </div>
+            <div class="logo w-[130px] md:w-[184px]">
+              <img src=".//Images/Logo.svg" alt="logo" />
+            </div>
+            <div class=" hidden md:flex nav-links text-[11px] lg:text-[18px]  font-[400] items-center gap-[12px] lg:gap-[24px]  ">
+                <div class=" links link-1">
+                    <a href="#">Collection</a>
+                </div>
+                <div class=" links link-2">
+                    <a href="#">New In</a>
+                </div>
+                <div class=" links link-3">
+                    <a href="#">Modiweek</a>
+                </div>
+                <div class=" links link-4">
+                    <a href="#">Plus Size</a>
+                </div>
+                <div class=" links link-5">
+                    <a href="#">Sustainability</a>
+                </div>
+            </div>
+            <div class="buttons gap-[8px] max-w-[200px] flex  md:gap-[24px] pr-[10px]">
+                <div class="search-icon hidden md:block">
+                    <a href="">
+                        <img src="./Images/Header search icon.png" alt="search">
+                    </a>
+                </div>
+                <div class="user-icon hidden md:block">
+                    <a href="">
+                        <img src="./Images/Header profile icon.png" alt="Profile">
+                    </a>
+                </div>
+                <div class="like-icon">
+                    <a href="">
+                        <img src="./Images/favorite.png" alt="like">
+                    </a>
+                </div>
+                <div class="cart-icon">
+                    <a href="">
+                        <img src="./Images/Vector.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>

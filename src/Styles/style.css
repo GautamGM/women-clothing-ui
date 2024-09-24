@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "montser";
+    src: url("../Fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+.links{
+    max-width: 120px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.links:hover{
+    color: red;
+}
