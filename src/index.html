@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Your Custom CSS -->
     <link rel="stylesheet" href="./Styles/style.css" />
   </head>
   <style>
@@ -18,82 +22,234 @@
       margin: 0px;
       padding: 0px;
       box-sizing: border-box;
+    }
+    body {
       background-color: #ffffff;
-      
+    }
+    .color-btn {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
     }
   </style>
+
+  <!-- main-paddng- navbar px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px] -->
   <body>
-    <!-- start here -->
-    <div class=" p-[0px] m-[0px] flex justify-center main-conatiner font-[Montserrat]">
-      <!-- header-section -->
-      <header class="fixed left-[0px]">
-        <div
-          class="upper-line-all-order font-[600] flex justify-center items-center h-[25px] bg-[#5A6D57] text-[#FFFFFF] w-screen text-[12px] font-[Montserrat]"
-        >
-          Enjoy Free Shipping On All Orders
-        </div>
-        <div class="navbar px-[10px] sm:px-[40px] sm:pr-[40px]  ">
-            <!-- navbar---- -->
-          <nav
-            class=" h-[50px]  md:h-[70px] flex justify-between items-center borde bg-[#FFFFFF]"
+    <div class="main-containe">
+      <!-- start here -->
+      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1760px] mx-auto">
+        <!-- header-section -->
+        <header class="fixed right-[0px] left-[0px] W-[100%]">
+          <div
+            class="upper-line-all-order font-[600] flex justify-center items-center h-[25px] bg-[#5A6D57] text-[#FFFFFF] text-[12px] font-[Montserrat]"
           >
-          <div class="humburger-tab md:hidden">
-        <a href="#">
-            <img src="./Images/Style=Two Tone.png" alt="">
-        </a>
+            Enjoy Free Shipping On All Orders
           </div>
-            <div class="logo  ml-[10px] sm:ml-[0px] w-[130px] md:w-[184px]">
-              <img src=".//Images/Logo.svg" alt="logo" />
-            </div>
-            <div class=" hidden md:flex nav-links text-[11px] text-[#404040] lg:text-[18px]  font-[400] items-center gap-[12px] lg:gap-[24px]  ">
-                <div class=" links link-1">
-                    <a href="#">Collection</a>
+          <div
+            class="navbar bg-[white] px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px]"
+          >
+            <!-- navbar---- -->
+            <nav
+              class="h-[50px] md:h-[70px] flex justify-between items-center borde bg-[#FFFFFF]"
+            >
+              <div class="humburger-tab md:hidden">
+                <a href="#">
+                  <img src="./Images/Style=Two Tone.png" alt="" />
+                </a>
+              </div>
+              <div class="logo ml-[10px] sm:ml-[0px] w-[130px] md:w-[184px]">
+                <img src="./Images/Logo.svg" alt="logo" />
+              </div>
+              <div
+                class="hidden md:flex nav-links text-[11px] text-[#404040] lg:text-[16px] xl:text-[18px] font-[400] items-center gap-[9px] lg:gap-[24px]"
+              >
+                <div class="links link-1">
+                  <a href="#">Collection</a>
                 </div>
-                <div class=" links link-2">
-                    <a href="#">New In</a>
+                <div class="links link-2">
+                  <a href="#">New In</a>
                 </div>
-                <div class=" links link-3">
-                    <a href="#">Modiweek</a>
+                <div class="links link-3">
+                  <a href="#">Modiweek</a>
                 </div>
-                <div class=" links link-4">
-                    <a href="#">Plus Size</a>
+                <div class="links link-4">
+                  <a href="#">Plus Size</a>
                 </div>
-                <div class=" links link-5">
-                    <a href="#">Sustainability</a>
+                <div class="links link-5">
+                  <a href="#">Sustainability</a>
                 </div>
-            </div>
-            <div class="buttons gap-[8px] max-w-[200px] flex  md:gap-[24px] pr-[10px]">
+              </div>
+              <div
+                class="buttons gap-[8px] max-w-[200px] flex md:gap-[24px] pr-[10px]"
+              >
                 <div class="search-icon hidden md:block">
-                    <a href="">
-                        <img src="./Images/Header search icon.png" alt="search">
-                    </a>
+                  <a href="">
+                    <img src="./Images/Header search icon.png" alt="search" />
+                  </a>
                 </div>
                 <div class="user-icon hidden md:block">
-                    <a href="">
-                        <img src="./Images/Header profile icon.png" alt="Profile">
-                    </a>
+                  <a href="">
+                    <img src="./Images/Header profile icon.png" alt="Profile" />
+                  </a>
                 </div>
                 <div class="like-icon">
-                    <a href="">
-                        <img src="./Images/favorite.png" alt="like">
-                    </a>
+                  <a href="">
+                    <img src="./Images/favorite.png" alt="like" />
+                  </a>
                 </div>
                 <div class="cart-icon">
-                    <a href="">
-                        <img src="./Images/Vector.png" alt="cart">
-                    </a>
+                  <a href="">
+                    <img src="./Images/Vector.png" alt="cart" />
+                  </a>
                 </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- hearder-End-here -->
-       <!--============================================================================================================ -->
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- hearder-End-here -->
+        <!--============================================================================================================ -->
 
-       <!-- hero-section -->
-        <div class="hero bg-black  ">
-            <img src="./Images/hero image.png" alt="">
+        <!-- hero-section -->
+        <div class="hero-bg z-[-1] flex justify- items-end relative top-[90px]">
+          <div
+            class="w-[195px] sm:w-[250px] lg:w-[300px] h-[130px] absolute text-[white] left-[12px] md:left-[45px] lg:left-[70px] sm:mb-[100px] md:mb-[200px] leading-[30px] sm:leading-[36px] lg:leading-[61.2px]"
+          >
+            <h1
+              class="text-[18px] sm:text-[22px] lg:text-[34px] font-[Cabin-it] font-[400] text-[#0C0C0C]"
+            >
+              Elegance in simplicity,
+              <span class="tracking-[1px]">Earth’s</span> harmony
+            </h1>
+            <button
+              class="w-[68px] text-[14px] sm:w-[100px] md:w-[184px] md:h-[40px] bg-[#FFFFFF] text-[black] flex justify-center items-center mt-[20px]"
+            >
+              New In
+            </button>
+          </div>
         </div>
+        <!-- ==============================================================================================================> -->
+
+        <!-- Best Seller section -->
+        <section class="Best-seller-container mt-[100px]">
+          <div
+            class="Best-seller pl-[12px] pr-[16px] lg:pl-[70px] lg:pr-[70px]"
+          >
+            <!-- title-button- -->
+            <div class="tittle-best-seller flex justify-between items-center">
+              <h3
+                class="text-[20px] lg:text-[32px] font-[700] lg:font-[600] text-[#0C0C0C]"
+              >
+                Best Sellers
+              </h3>
+              <button
+                class="hidden md:block text-[14px] w-[105px] h-[40px] text-[#5A6D57]"
+              >
+                view all
+              </button>
+            </div>
+            <!-- ------------------------------- -->
+            <!-- image-cards -->
+            <div class="cards-of-cloths grid grid-cols-3 gap-10px mt-[20px]">
+              <div class="card w-[392px] h-[540px]">
+                <div class="image-div max-w-[392px] relative h-[438px]">
+                  <button class="absolute right-[20px] top-[30px]">
+                    <img src="./Images/favorite-like.png" alt="like" />
+                  </button>
+                  <img
+                    src="./Images/Rectangle 12348.png"
+                    class="w-[100%] h-[100%] object-cover"
+                    alt="tailored stretch-cloth"
+                  />
+                </div>
+                <div class="title-name flex justify-between">
+                  <div class="name flex flex-col gap-[6px] p-2">
+                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
+                    <p
+                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
+                    >
+                      Turn It Up Pants
+                    </p>
+                    <div class="btn flex gap-3">
+                      <button class="color-btn bg-[#0C0C0C]"></button>
+                      <button class="color-btn bg-[#7DC3EB]"></button>
+                      <button class="color-btn bg-[#748C70]"></button>
+                    </div>
+                  </div>
+                  <div
+                    class="price flex flex-end justify-center items-center pr-3"
+                  >
+                    <h6 class="h-[22px] font-[700]">$180</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-[392px] h-[540px]">
+                <div class="image-div max-w-[392px] relative h-[438px]">
+                  <button class="absolute right-[20px] top-[30px]">
+                    <img src="./Images/favorite-like.png" alt="like" />
+                  </button>
+                  <img
+                    src="./Images/Rectangle 12348.png"
+                    class="w-[100%] h-[100%] object-cover"
+                    alt="tailored stretch-cloth"
+                  />
+                </div>
+                <div class="title-name flex justify-between">
+                  <div class="name flex flex-col gap-[6px] p-2">
+                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
+                    <p
+                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
+                    >
+                      Turn It Up Pants
+                    </p>
+                    <div class="btn flex gap-3">
+                      <button class="color-btn bg-[#0C0C0C]"></button>
+                      <button class="color-btn bg-[#7DC3EB]"></button>
+                      <button class="color-btn bg-[#748C70]"></button>
+                    </div>
+                  </div>
+                  <div
+                    class="price flex flex-end justify-center items-center pr-3"
+                  >
+                    <h6 class="h-[22px] font-[700]">$180</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-[392px] h-[540px]">
+                <div class="image-div max-w-[392px] relative h-[438px]">
+                  <button class="absolute right-[20px] top-[30px]">
+                    <img src="./Images/favorite-like.png" alt="like" />
+                  </button>
+                  <img
+                    src="./Images/Rectangle 12348.png"
+                    class="w-[100%] h-[100%] object-cover"
+                    alt="tailored stretch-cloth"
+                  />
+                </div>
+                <div class="title-name flex justify-between">
+                  <div class="name flex flex-col gap-[6px] p-2">
+                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
+                    <p
+                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
+                    >
+                      Turn It Up Pants
+                    </p>
+                    <div class="btn flex gap-3">
+                      <button class="color-btn bg-[#0C0C0C]"></button>
+                      <button class="color-btn bg-[#7DC3EB]"></button>
+                      <button class="color-btn bg-[#748C70]"></button>
+                    </div>
+                  </div>
+                  <div
+                    class="price flex flex-end justify-center items-center pr-3"
+                  >
+                    <h6 class="h-[22px] font-[700]">$180</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
