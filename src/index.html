@@ -34,10 +34,10 @@
   </style>
 
   <!-- main-paddng- navbar px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px] -->
-  <body>
-    <div class="main-containe">
+  <body class="">
+    <div class="main-containe   ">
       <!-- start here -->
-      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1760px] mx-auto">
+      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1440px   mx-auto">
         <!-- header-section -->
         <header class="fixed right-[0px] left-[0px] W-[100%]">
           <div
@@ -46,7 +46,7 @@
             Enjoy Free Shipping On All Orders
           </div>
           <div
-            class="navbar bg-[white] px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px]"
+            class="navbar bg-[white] px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[110px] lg:pr-[110px]"
           >
             <!-- navbar---- -->
             <nav
@@ -80,7 +80,7 @@
                 </div>
               </div>
               <div
-                class="buttons gap-[8px] max-w-[200px] flex md:gap-[24px] pr-[10px]"
+                class="buttons gap-[8px] max-w-[200px] flex md:gap-[24px] pr-[9px]"
               >
                 <div class="search-icon hidden md:block">
                   <a href="">
@@ -112,7 +112,7 @@
         <!-- hero-section -->
         <div class="hero-bg z-[-1] flex justify- items-end relative top-[90px]">
           <div
-            class="w-[195px] sm:w-[250px] lg:w-[300px] h-[130px] absolute text-[white] left-[12px] md:left-[45px] lg:left-[70px] sm:mb-[100px] md:mb-[200px] leading-[30px] sm:leading-[36px] lg:leading-[61.2px]"
+            class="w-[195px] sm:w-[250px] lg:w-[300px] h-[130px] absolute text-[white] left-[12px] md:left-[45px] lg:left-[115px] sm:mb-[100px] md:mb-[200px] leading-[30px] sm:leading-[36px] lg:leading-[61.2px]"
           >
             <h1
               class="text-[18px] sm:text-[22px] lg:text-[34px] font-[Cabin-it] font-[400] text-[#0C0C0C]"
@@ -130,9 +130,9 @@
         <!-- ==============================================================================================================> -->
 
         <!-- Best Seller section -->
-        <section class="Best-seller-container mt-[100px]">
+        <section class="Best-seller-container mt-[100px] ">
           <div
-            class="Best-seller pl-[12px] pr-[16px] lg:pl-[70px] lg:pr-[70px]"
+            class="Best-seller pl-[12px] pr-[16px] lg:pl-[116px] lg:pr-[116px]"
           >
             <!-- title-button- -->
             <div class="tittle-best-seller flex justify-between items-center">
@@ -142,113 +142,124 @@
                 Best Sellers
               </h3>
               <button
-                class="hidden md:block text-[14px] w-[105px] h-[40px] text-[#5A6D57]"
+                class="hidden md:block text-[14px] text-end w-[105px] h-[40px] text-[#5A6D57]"
               >
                 view all
               </button>
             </div>
             <!-- ------------------------------- -->
-            <!-- image-cards -->
-            <div class="cards-of-cloths grid grid-cols-3 gap-10px mt-[20px]">
-              <div class="card w-[392px] h-[540px]">
-                <div class="image-div max-w-[392px] relative h-[438px]">
-                  <button class="absolute right-[20px] top-[30px]">
-                    <img src="./Images/favorite-like.png" alt="like" />
-                  </button>
-                  <img
-                    src="./Images/Rectangle 12348.png"
-                    class="w-[100%] h-[100%] object-cover"
-                    alt="tailored stretch-cloth"
-                  />
-                </div>
-                <div class="title-name flex justify-between">
-                  <div class="name flex flex-col gap-[6px] p-2">
-                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
-                    <p
-                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
+              <!-- image-cards -->
+              <div class="  cards-of-cloths flex justify-between mt-[20px] lg:gap-[16px] flex-wrap ">
+                <!-- ===========================CARD-1 -->
+                <div class="card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px]  sm:h-[350px] lg:w-[375px] xl:w-[392px]  lg:h-[540px]">
+                  <div class="image-div max-w-[392px] relative h-[263px] md:h-[280px]  lg:h-[438px] z-[-1] ">
+                    <button class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]">
+                      <img src="./Images/favorite-like.png" alt="like" />
+                    </button>
+                    <img
+                      src="./Images/Rectangle 12348.png"
+                      class="w-[100%] h-[100%] object-cover hidden sm:block "
+                      alt="tailored stretch-cloth"
+                    />
+                    <img src="./Images/mobile-telar-image.png" class="w-[100%] h-[100%] object-cover sm:hidden "
+                    alt="tailored stretch-cloth-mobile" >
+                  </div>
+                  <div class="title-name flex justify-between">
+                    <div class="name flex flex-col  lg:gap-[6px] lg:p-2">
+                      <h6 class=" text-[14px] lg:text-[16px] font-[600] lg:font-[700]">Tailored Stretch</h6>
+                      <p
+                        class=" text-[14px] lg:text-[16px] leading-[20px] font-[400] flex items-center text-[#0C0C0C] h-[29px]"
+                      >
+                        Turn It Up Pants
+                      </p>
+                      <div class="btn flex mt-[5px] gap-3">
+                        <button class="color-btn bg-[#0C0C0C] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#7DC3EB] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#748C70] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                      </div>
+                    </div>
+                    <div
+                      class="price flex flex-end justify-center items-end lg:items-center lg:pr-3"
                     >
-                      Turn It Up Pants
-                    </p>
-                    <div class="btn flex gap-3">
-                      <button class="color-btn bg-[#0C0C0C]"></button>
-                      <button class="color-btn bg-[#7DC3EB]"></button>
-                      <button class="color-btn bg-[#748C70]"></button>
+                      <h6 class=" h-[22px] text-[14px]  font-[600] lg:text-[16px] lg:font-[700] text-[#0C0C0C] ">$180</h6>
                     </div>
                   </div>
-                  <div
-                    class="price flex flex-end justify-center items-center pr-3"
-                  >
-                    <h6 class="h-[22px] font-[700]">$180</h6>
+                </div>
+                <!-- CARD-2 -->
+                <div class="card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px]  sm:h-[350px] lg:w-[375px] xl:w-[392px]  lg:h-[540px]">
+                  <div class="image-div max-w-[392px] relative h-[263px] md:h-[280px]  lg:h-[438px] z-[-1] ">
+                    <button class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]">
+                      <img src="./Images/favorite-like.png" alt="like" />
+                    </button>
+                    <img
+                      src="./Images/Technical-silk.png"
+                      class="w-[100%] h-[100%] object-cover hidden sm:block "
+                      alt="tailored stretch-cloth"
+                    />
+                    <img src="./Images/silk-image.jfif" class="w-[100%] h-[100%] object-cover sm:hidden "
+                    alt="tencnical-silk-cloth-mobile" >
+                  </div>
+                  <div class="title-name flex justify-between">
+                    <div class="name flex flex-col  lg:gap-[6px] lg:p-2">
+                      <h6 class=" text-[14px] lg:text-[16px] font-[600] lg:font-[700]">Technical Silk</h6>
+                      <p
+                        class=" text-[14px] lg:text-[16px] leading-[20px] flex items-center text-[#0C0C0C] h-[29px]"
+                      >
+                      Make A Splash
+                      </p>
+                      <div class="btn flex mt-[5px] gap-3">
+                        <button class="color-btn bg-[#909225] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#19418E] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#0C0C0C] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                      </div>
+                    </div>
+                    <div
+                      class="price flex flex-end justify-center items-end lg:items-center lg:pr-3"
+                    >
+                      <h6 class=" h-[22px] text-[14px]  font-[600] lg:text-[16px] lg:font-[700] text-[#0C0C0C] ">$120</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD-3 -->
+                <div class=" hidden sm:block card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px]  sm:h-[350px] lg:w-[375px] xl:w-[392px] lg:h-[540px]">
+                  <div class="image-div max-w-[392px] relative h-[263px] md:h-[280px]  lg:h-[438px] z-[-1] ">
+                    <button class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]">
+                      <img src="./Images/favorite-like.png" alt="like" />
+                    </button>
+                    <img
+                      src="./Images/cool-weave.png"
+                      class="w-[100%] h-[100%] object-cover "
+                      alt="tailored stretch-cloth"
+                    />
+                  </div>
+                  <div class="title-name flex justify-between">
+                    <div class="name flex flex-col  lg:gap-[6px] lg:p-2">
+                      <h6 class=" text-[14px] lg:text-[16px] font-[600] lg:font-[700]">Cool Weave</h6>
+                      <p
+                        class=" text-[14px] lg:text-[16px] leading-[20px] flex items-center text-[#0C0C0C] h-[29px]"
+                      >
+                      Anywhere Dress
+                      </p>
+                      <div class="btn flex mt-[5px] gap-3">
+                        <button class="color-btn bg-[#D0A5EA] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#909225] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                        <button class="color-btn bg-[#748C70] w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] "></button>
+                      </div>
+                    </div>
+                    <div
+                      class="price flex flex-end justify-center items-end lg:items-center lg:pr-3"
+                    >
+                      <h6 class=" h-[22px] text-[14px]  font-[600] lg:text-[16px] lg:font-[700] text-[#0C0C0C] ">$180</h6>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card w-[392px] h-[540px]">
-                <div class="image-div max-w-[392px] relative h-[438px]">
-                  <button class="absolute right-[20px] top-[30px]">
-                    <img src="./Images/favorite-like.png" alt="like" />
-                  </button>
-                  <img
-                    src="./Images/Rectangle 12348.png"
-                    class="w-[100%] h-[100%] object-cover"
-                    alt="tailored stretch-cloth"
-                  />
-                </div>
-                <div class="title-name flex justify-between">
-                  <div class="name flex flex-col gap-[6px] p-2">
-                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
-                    <p
-                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
-                    >
-                      Turn It Up Pants
-                    </p>
-                    <div class="btn flex gap-3">
-                      <button class="color-btn bg-[#0C0C0C]"></button>
-                      <button class="color-btn bg-[#7DC3EB]"></button>
-                      <button class="color-btn bg-[#748C70]"></button>
-                    </div>
-                  </div>
-                  <div
-                    class="price flex flex-end justify-center items-center pr-3"
-                  >
-                    <h6 class="h-[22px] font-[700]">$180</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="card w-[392px] h-[540px]">
-                <div class="image-div max-w-[392px] relative h-[438px]">
-                  <button class="absolute right-[20px] top-[30px]">
-                    <img src="./Images/favorite-like.png" alt="like" />
-                  </button>
-                  <img
-                    src="./Images/Rectangle 12348.png"
-                    class="w-[100%] h-[100%] object-cover"
-                    alt="tailored stretch-cloth"
-                  />
-                </div>
-                <div class="title-name flex justify-between">
-                  <div class="name flex flex-col gap-[6px] p-2">
-                    <h6 class="text-[16px] font-[700]">Tailored Stretch</h6>
-                    <p
-                      class="text-[16px] leading-[20px] border text-[#0C0C0C] h-[29px]"
-                    >
-                      Turn It Up Pants
-                    </p>
-                    <div class="btn flex gap-3">
-                      <button class="color-btn bg-[#0C0C0C]"></button>
-                      <button class="color-btn bg-[#7DC3EB]"></button>
-                      <button class="color-btn bg-[#748C70]"></button>
-                    </div>
-                  </div>
-                  <div
-                    class="price flex flex-end justify-center items-center pr-3"
-                  >
-                    <h6 class="h-[22px] font-[700]">$180</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          
         </section>
+        <!-- =========================================> -->
+         
       </div>
     </div>
   </body>
