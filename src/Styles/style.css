@@ -15,7 +15,7 @@
     background-image: url("../Images/hero\ image.png");
     /* background-size: cover; */
     background-size:100% 90%;
-    /* background-position-y:80px; */
+    background-position-y:-10px;
     background-repeat:no-repeat;
     
     /* background-position-y:75px; */
