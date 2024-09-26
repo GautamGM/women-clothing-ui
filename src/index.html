@@ -69,11 +69,56 @@
         height: 310px;
       }
     }
-    @media (min-width:540px) and (max-width:640px) {
+    @media (min-width:540px){
       .dresses{
         height: 392px;
       }
     }
+    @media (min-width:640px) {
+      .dresses{
+        height: 540px;
+        background-color: rgb(27, 26, 25);
+      }
+    }
+    @media (min-width:768px) and (max-width:820px) {
+      .boluses{
+        height:216px !important;
+        background-color: rgb(27, 26, 25);
+      }
+      .left-div{
+        gap: 100px !important;
+      }
+    }
+    @media (min-width:820px) {
+      .dresses{
+        height: 570px;
+        background-color: rgb(27, 26, 25);
+      }
+    }
+    @media (min-width:853px) and (max-width:900px) {
+      .boluses{
+        height:280px !important;
+        background-color: rgb(27, 26, 25);
+      }
+      .dresses{
+        height: 520px;
+        background-color: rgb(27, 26, 25);
+      }
+      .left-div{
+        gap: 170px !important;
+      }
+    }
+
+    @media (min-width:912px) and (max-width:920px) {
+      .boluses{
+        height:300px !important;
+        background-color: rgb(27, 26, 25);
+      }
+      .left-div{
+        gap: 170px !important;
+      }
+    }
+
   </style>
 
   <!-- main-paddng- navbar px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px] -->
@@ -325,33 +370,36 @@
             <!-- ------------------------------- -->
               <!-- cloths-collection-section -->
               <div class="  image-of-cloths-collection grid grid-cols-2 mb-[30px]  mt-[20px] gap-[15px] lg:gap-[31px]   ">
-              <div class="left-div flex flex-col  gap-[50px] lg:gap-[60px]   ">
-                <div class="upper-image min-w-[150px] h-[165px]  lg:max-w-[650px] lg:h-[375px] xl:h-[455px] 2xl:h-[500px] relative z-[-1] ">
-                  <img src="./Images/upper-left-image.png" class="w-[100%] h-[100%] object-cover" alt="">
+              <div class="left-div flex flex-col gap-[50px] lg:gap-[58px]   ">
+                <div class="upper-image  min-w-[150px] h-[165px] lg:max-w-[650px] lg:h-[375px] xl:h-[455px] 2xl:h-[500px] relative z-[-1] ">
+                  <img src="./Images/upper-left-image.png" class=" boluses  w-[100%] h-[100%]  object-cover" alt="">
                   <button class=" bg-[#ffffff] absolute lg:right-[25px] lg:bottom-[20px] w-[80px] lg:w-[167px] h-[30px] lg:h-[40px] text-[14px] font-[400] ">Boluses</button>
                 </div>
-                <div class="lower-image min-w-[150px]   xl:max-w-[650px] xl:h-[887px] relative z-[-1] ">
-                  <img src="./Images/lower-left-image.png" class=" dresses min-h-[235px] sm:h-[460px] md:h-[543px]  xl:h-[750px]  object-cover" alt="">
+                <div class="lower-image min-w-[150px]   xl:max-w-[650px]  relative z-[-1] ">
+                  <img src="./Images/lower-left-image.png" class=" dresses min-h-[235px] lg:h-[544px]   xl:w-[670px] xl:h-[810px]  object-cover" alt="">
                   <button class=" bg-[#FFFFFF] absolute lg:right-[25px] lg:bottom-[20px] w-[80px] lg:w-[167px] h-[30px] lg:h-[40px] text-[14px] font-[400] ">Dresses</button>
                 </div>
               </div>
               <!-- right -->
-              <div class="right-div  flex  flex-col items-end gap-[60px] lg:gap-[100px] xl:gap-[260px]   ">
+              <div class="right-div  flex  flex-col items-end gap-[60px] md:gap-[77px] lg:gap-[100px] xl:gap-[319px] ">
                 <!-- right-upperimage -->
                 <div class=" bg-black right-upper-image   lg:h-[316px] lg:max-w-[670px] lg:h-[607px] relative z-[-1] ">
-                  <img src="./Images/right-image-up.png " class=" pants-image  lg:w-[700px] lg:h-[607px] xl:h-[755px]  "    alt=""  >
-                  <button class=" bg-[#FFFFFF] absolute lg:left-[25px] lg:bottom-[18px] xl:bottom-[-8rem] lg:w-[167px] w-[80px] h-[30px] lg:h-[40px] text-[14px] font-[400] ">Pants</button>
+                  <img src="./Images/right-image-up.png " class=" pants-image  lg:w-[700px] lg:h-[607px] xl:h-[817px]  "    alt=""  >
+                  <button class=" bg-[#FFFFFF] absolute lg:left-[25px] lg:bottom-[18px] xl:bottom-[-12rem]  lg:w-[167px] w-[80px] h-[30px] lg:h-[40px] text-[14px] font-[400] ">Pants</button>
                 </div>
                 <!-- right-lower-image -->
-                <div class=" right-lower-image 2xl:h-[400px] bg-[red] z-[-1] relative ">
-                  <img src="./Images/right-lower-img.jfif" class=" w-[480px] h-[200px] lg:h-[270px] xl:w-[670px] xl:h-[400px] object-cover  "  alt="" />
-                  <button class=" absolute lg:right-[25px] lg:bottom-[19px] bg-[#ffffff] w-[80px] text-[14px] font-[400] h-[30px] lg:w-[167px] lg:h-[40px]  " >Outwear</button>
+                <div class=" right-lower-image xl:h-[400px]  bg-[red] z-[-1] relative ">
+                  <img src="./Images/right-lower-img.jfif" class=" w-[480px] h-[200px] md:h-[233px] lg:h-[270px] xl:w-[670px] xl:h-[400px] 2xl:h-[440px] object-cover " alt="" />
+                  <button class=" absolute lg:right-[25px] lg:bottom-[19px] bg-[#ffffff] w-[80px] text-[14px] font-[400] h-[30px] lg:w-[167px] lg:h-[40px] 2xl:bottom-[-15px]  " >Outwear</button>
                 </div>
                 </div>
               </div>
-              </div>
+              
           </div>
         </section>
+        <!-- ==================================================================================> -->
+
+        <!--  -->
       </div>
     </div>
   </body>
