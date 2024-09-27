@@ -42,6 +42,32 @@
       background-position-y: -240px;
     }
 
+    ul li a{
+      font-size: 18px;
+      font-weight: 400;
+      font-family:inherit;
+    }
+
+    .footer-input{
+      display: flex;
+      padding:2px;
+      border: 1px solid white;
+      width:100%;
+    }
+    .footer-input input{
+      border: none;
+      outline: none;
+    }
+    .footer-input button{
+      background:none;
+    }
+
+    input::placeholder{
+      color: #fffffff8;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
     @media (min-width: 320px) {
 
       .image-div-moddiweek{
@@ -77,6 +103,10 @@
       }
       .modiweek-title{
         height: 23px;
+      }
+
+      .silk-card{
+        display: block!important;
       }
     }
 
@@ -135,7 +165,7 @@
         height: 310px;
       }
     }
-    @media (min-width: 540px) {
+    @media (min-width: 540px) and (max-width:640px) {
       .dresses {
         height: 392px;
       }
@@ -161,11 +191,27 @@
       .left-div {
         gap: 100px !important;
       }
+
+      .image-div-moddiweek{
+        width:237px!important;
+        height:356px!important;
+      }
+      .modiweek-title{
+        height: 23px;
+      }
     }
     @media (min-width: 820px) {
       .dresses {
         height: 570px;
         background-color: rgb(27, 26, 25);
+      }
+
+      .image-div-moddiweek{
+        width:247px!important;
+        height:356px!important;
+      }
+      .modiweek-title{
+        height: 23px;
       }
     }
     @media (min-width: 853px) and (max-width: 900px) {
@@ -189,6 +235,14 @@
       }
       .left-div {
         gap: 170px !important;
+      }
+
+      .image-div-moddiweek{
+        width:272px!important;
+        height:356px!important;
+      }
+      .modiweek-title{
+        height: 23px;
       }
     }
     @media (min-width: 1326px) {
@@ -232,7 +286,7 @@
                 <img src="./Images/Logo.svg" alt="logo" />
               </div>
               <div
-                class="hidden md:flex nav-links text-[11px] text-[#404040] lg:text-[16px] xl:text-[18px] font-[400] items-center gap-[9px] lg:gap-[24px]"
+                class="hidden md:flex nav-links text-[11px] text-[#404040] lg:text-[13px] xl:text-[18px] font-[400] items-center gap-[9px] lg:gap-[24px]"
               >
                 <div class="links link-1">
                   <a href="#">Collection</a>
@@ -325,7 +379,7 @@
             >
               <!-- ===========================CARD-1 -->
               <div
-                class="card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
+                class="card w-[166px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -383,7 +437,7 @@
               </div>
               <!-- CARD-2 -->
               <div
-                class="card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
+                class=" silk-card hidde card w-[166px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -442,7 +496,7 @@
 
               <!-- CARD-3 -->
               <div
-                class="hidden sm:block card w-[160px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
+                class="hidden sm:block card w-[166px] min-h-[333px] sm:w-[230px] md:w-[239px] sm:h-[350px] lg:w-[375px] xl:w-[334px] 2xl:w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -495,8 +549,7 @@
               </div>
             </div>
             <div
-              class="div h-[30px] flex justify-center items-end sm:hidden mb-[10px]"
-            >
+              class="div h-[30px] flex justify-center items-end sm:hidden mb-[10px]">
               <img src="./Images/scroll dots.png" alt="scroll" />
             </div>
           </div>
@@ -591,11 +644,11 @@
         </section>
         <!-- ==================================================================================> -->
 
-        <!--Modiwwek-section  -->
+        <!--Modiweek-section  -->
         <section
           class=" modiweek-container mt-[100px] mb-[50px]  "
         >
-          <div class="modiweek pl-[12px] pr-[12px] lg:pr-[0px] lg:pl-[116px]">
+          <div class="modiweek pl-[12px] pr-[14px] lg:pr-[116px] xl:pr-[0px] lg:pl-[116px]">
             <div class="tittle-best-seller flex justify-between items-center ">
               <h3
                 class="text-[20px] lg:text-[32px] font-[700] lg:font-[600] text-[#0C0C0C]"
@@ -613,7 +666,7 @@
                 class=" card-modiweek  "
               >
                 <div
-                  class="  image-div-moddiweek w-[310px]  h-[450px] relative  "
+                  class="  image-div-moddiweek md:w-[237px] md:h-[356px] xl:!w-[240px] 2xl:!w-[310px]  2xl:!h-[450px] relative  "
                 >
                   <button
                     class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]"
@@ -647,7 +700,7 @@
                 class="card-modiweek "
               >
                 <div
-                  class=" image-div-moddiweek w-[310px]  h-[450px] relative  "
+                  class=" image-div-moddiweek md:w-[237px] md:h-[356px] xl:!w-[240px] 2xl:!w-[310px]  2xl:!h-[450px] relative  "
                 >
                   <button
                     class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]"
@@ -678,10 +731,10 @@
               <!-- --------------------------------------------------- -->
               <!-- card-modiweek-3--modiweeek -->
               <div
-                class=" hidden sm:block card-modiweek border   "
+                class=" hidden sm:block card-modi-week    "
               >
                 <div
-                  class="image-div w-[310px]  h-[450px] relative  "
+                  class=" image-div-moddiweek md:w-[237px] md:!h-[356px] xl:!w-[240px] 2xl:!w-[310px]  2xl:!h-[450px] relative  "
                 >
                   <button
                     class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]"
@@ -712,10 +765,10 @@
               <!-- --------------------------------------------------- -->
               <!-- card-modiweek-4-modiweek=================================== -->
               <div
-                class=" hidden lg:block card-modiweek    "
+                class=" hidden xl:block card-modiweek    "
               >
                 <div
-                  class="image-div w-[310px]  h-[450px] relative  "
+                  class="image-div sm:w-[200px] sm:h-[356px] xl:!w-[240px] 2xl:!w-[310px]  2xl:h-[450px] relative  "
                 >
                   <button
                     class="absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]"
@@ -745,10 +798,10 @@
               </div>
               <!-- card-5-modeweek -->
               <div
-                class=" hidden xl:block card  2xl:max-w-[90px] h-[493px] "
+                class=" hidden xl:block card xl:h-[356px]  2xl:max-w-[90px] 2xl:h-[493px] "
               >
                 <div
-                  class="image-div  w-[100%] relative h-[263px] md:h-[280px] lg:h-[450px] "
+                  class="image-div  w-[100%] relative h-[263px] md:h-[280px] 2xl:h-[450px] xl:h-[357px] "
                 >
                   <button
                     class=" hidden absolute right-[10px] top-[10px] sm:right-[20px] sm:top-[30px]"
@@ -779,10 +832,16 @@
               <!-- END_OG_CARDS_ -->
               <!-- ************************************************************************************* -->
             </div>
+            <div
+              class="div  flex justify-center items-end xl:hidden "
+            >
+              <img src="./Images/scroll dots.png" alt="scroll" />
+            </div>
           </div>
+          
         </section>
         <!-- ***************************************************************************END********************************************* -->
-        <!-- -------------------------Sustainability-section----------------------- -->
+        <!--Sustainability-section----------------------- -->
         <section class="Sustainability-section overflow-hidden">
           <div class="Sustainabilit flex justify-end items-end relative">
             <img
@@ -809,10 +868,10 @@
             </div>
           </div>
         </section>
-        <!--Sustainability-END************************************************** -->
+        <!--Sustainability-END************************************************** *****************************-->
 
         <!-- Follows On-us -->
-        <section class="Collection-container mt-[100px] mb-[50px]">
+        <section class="Collection-container mt-[40px] md:mt-[100px] mb-[50px]">
           <div
             class="collection pl-[12px] pr-[12px] lg:pl-[116px] lg:pr-[116px]"
           >
@@ -851,17 +910,19 @@
             </div>
           </div>
         </section>
-        <!-- follow-section-END*********************************************** -->
+        <!-- follow-section-END****************************************************************************** -->
 
         <!-- footer -->
-        <footer class=" hidden bg-gray-800 text-white py-8 px-6">
-          <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <footer class="  bg-[#404040] text-white md:py-8 lg:pl-[107px] pr-[16px] pl-[12px]  lg:min-h-[417px]  lg:pr-[110px] md:px-6">
+          <div class="  grid grid-cols-1 justify-items-between justify-items-cente  sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-1  xl:grid-cols-2 ">
             <!-- Club Signup Section -->
-            <div class="space-y-4 col-span-2 lg:col-span-1">
-              <h3 class="text-xl font-semibold">Join Our Club, Get 15% Off For Your Birthday</h3>
+            <div class=" lg:flex flex-col gap-[21px]  lg:w-[490px]">
+              <h3 class=" text-[20px] font-[700] ">Join Our Club, Get 15% Off For Your Birthday</h3>
               <form class="flex items-center space-x-2">
-                <input class="bg-gray-900 text-white p-2 w-full" type="email" placeholder="Enter Your Email Address">
-                <button class="bg-gray-700 p-2 rounded">→</button>
+                <div class="input-f-div footer-input ">
+                  <input class="  bg-[#404040] text-white footer-input p-2 w-full" type="email" placeholder="Enter Your Email Address">
+                  <button class=" p-2 rounded">→</button>
+                </div>
               </form>
               <div class="flex items-start space-x-2">
                 <input type="checkbox" class="mt-1">
@@ -869,10 +930,11 @@
               </div>
             </div>
         
-            <!-- About Modimal -->
-            <div class="sm:mt-0">
-              <h4 class="text-lg font-semibold mb-2">About Modimal</h4>
-              <ul class="space-y-2">
+           <div class="link-div flex justify-between flex-wrap ">
+             <!-- About Modimal -->
+             <div class="sm:mt-0">
+              <h4 class="text-[20px] font-[700] mb-2">About Modimal</h4>
+              <ul class="space-y-1">
                 <li><a href="#" class="hover:underline">Collection</a></li>
                 <li><a href="#" class="hover:underline">Sustainability</a></li>
                 <li><a href="#" class="hover:underline">Privacy Policy</a></li>
@@ -884,7 +946,7 @@
         
             <!-- Help & Support -->
             <div class="sm:mt-0">
-              <h4 class="text-lg font-semibold mb-2">Help & Support</h4>
+              <h4 class="text-[20px] font-[700] mb-2">Help & Support</h4>
               <ul class="space-y-2">
                 <li><a href="#" class="hover:underline">Orders & Shipping</a></li>
                 <li><a href="#" class="hover:underline">Returns & Refunds</a></li>
@@ -895,7 +957,7 @@
         
             <!-- Join Up -->
             <div class="sm:mt-0">
-              <h4 class="text-lg font-semibold mb-2">Join Up</h4>
+              <h4 class="text-[20px] font-[700] mb-2">Join Up</h4>
               <ul class="space-y-2">
                 <li><a href="#" class="hover:underline">Modimal Club</a></li>
                 <li><a href="#" class="hover:underline">Careers</a></li>
@@ -903,6 +965,7 @@
               </ul>
             </div>
           </div>
+           </div>
         
           <!-- Social Media and Copyright -->
           <div class="flex flex-col items-center lg:flex-row justify-between mt-8 -t -gray-700 pt-4">
