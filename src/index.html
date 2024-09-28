@@ -10,7 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -45,10 +51,10 @@
     ul li a {
       font-size: 18px;
       font-weight: 400;
-      font-family: inherit; 
+      font-family: inherit;
     }
 
-    ul li{
+    ul li {
       line-height: 32px;
     }
     .footer-input {
@@ -79,10 +85,9 @@
       .modiweek-title {
         height: 23px;
       }
-      .cloth-div{
+      .cloth-div {
         display: flex;
-        justify-content: center!important;
-
+        justify-content: center !important;
       }
     }
 
@@ -116,20 +121,18 @@
         display: block !important;
       }
 
-      ul li{
-      line-height:22px;
-      font-size: 14px;
-    }
-      ul li a{
-      font-size: 16px;
-    }
-
-    .cloth-div{
-        display: flex;
-        justify-content:space-between!important;
-
+      ul li {
+        line-height: 22px;
+        font-size: 14px;
+      }
+      ul li a {
+        font-size: 16px;
       }
 
+      .cloth-div {
+        display: flex;
+        justify-content: space-between !important;
+      }
     }
 
     @media (min-width: 375px) {
@@ -144,8 +147,8 @@
         height: 23px;
       }
 
-      .b-card{
-        width: 166px!important;
+      .b-card {
+        width: 166px !important;
       }
     }
     @media (min-width: 390px) {
@@ -160,8 +163,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 173px!important;
+      .b-card {
+        width: 173px !important;
       }
     }
     @media (min-width: 412px) {
@@ -176,8 +179,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 184px!important;
+      .b-card {
+        width: 184px !important;
       }
     }
     @media (min-width: 425px) {
@@ -191,16 +194,16 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 191px!important;
+      .b-card {
+        width: 191px !important;
       }
     }
     @media (min-width: 430px) {
       .dresses {
         height: 310px;
       }
-      .b-card{
-        width: 193px!important;
+      .b-card {
+        width: 193px !important;
       }
     }
     @media (min-width: 540px) and (max-width: 640px) {
@@ -214,8 +217,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 248px!important;
+      .b-card {
+        width: 248px !important;
       }
     }
     @media (min-width: 640px) {
@@ -240,8 +243,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 235px!important;
+      .b-card {
+        width: 235px !important;
       }
     }
     @media (min-width: 820px) {
@@ -257,8 +260,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 248px!important;
+      .b-card {
+        width: 248px !important;
       }
     }
     @media (min-width: 853px) and (max-width: 900px) {
@@ -273,8 +276,8 @@
       .left-div {
         gap: 170px !important;
       }
-      .b-card{
-        width: 258px!important;
+      .b-card {
+        width: 258px !important;
       }
     }
 
@@ -294,8 +297,8 @@
       .modiweek-title {
         height: 23px;
       }
-      .b-card{
-        width: 280px!important;
+      .b-card {
+        width: 280px !important;
       }
     }
     @media (min-width: 1326px) {
@@ -309,13 +312,96 @@
         background-position-y: -200px;
       }
     }
+
+    .sidenav {
+      height: 100%;
+      width: 0px;
+      position: fixed;
+      border-right: none;
+      z-index: 1;
+
+      left: 0;
+      background-color: #ffffff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      /* padding: 8px 8px 8px 32px; */
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    .accordion {
+      border: none;
+      color: #444;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: none;
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 786px) {
+      .icon {
+        display: block !important;
+      }
+      .sidenav {
+        display: block !important;
+      }
+
+      ul li {
+        list-style: none;
+        height: 20px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+    }
   </style>
 
   <!-- main-paddng- navbar px-[10px] md:pl-[30px] md:pr-[30px] lg:pl-[70px] lg:pr-[70px] -->
   <body class="">
     <div class="main-containe">
       <!-- start here -->
-      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1570px mx-auto">
+      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1570px] mx-auto">
         <!-- header-section -->
         <header class="fixed right-[0px] left-[0px] W-[100%] z-20">
           <div
@@ -332,7 +418,24 @@
             >
               <div class="humburger-tab md:hidden">
                 <a href="#">
-                  <img src="./Images/Style=Two Tone.png" alt="" />
+                  <img
+                    src="./Images/Style=Two Tone.png"
+                    style="font-size: 30px; cursor: pointer"
+                    onclick="openNav()"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="fb hidden flex">
+                <div
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                >
+                  <i class="fa-solid fa-xmark text-[#0C0C0C] text-[18px]"></i>
+                </div>
+                <a href="#">
+                  <img src="./Images/Header search icon.png" alt="search" />
                 </a>
               </div>
               <div class="logo ml-[10px] sm:ml-[0px] w-[130px] md:w-[184px]">
@@ -382,6 +485,93 @@
                 </div>
               </div>
             </nav>
+            <!-- small screen nav bar -->
+            <nav>
+              <div id="mySidenav" class="sidenav" style="display: none">
+                <div
+                  class="accordion"
+                  style="display: flex; justify-content: space-between"
+                >
+                  collection <i class="fa-solid fa-angle-down angle-d"></i>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <li>shop all</li>
+                    <li>tops & boluses</li>
+                    <li>tees</li>
+                    <li>pants</li>
+                    <li>jackets & outwears</li>
+                    <li>pullovers</li>
+                    <li>dresses & jumpsuits</li>
+                    <li>short & skirts</li>
+                  </ul>
+                </div>
+                <hr />
+
+                <div
+                  class="accordion"
+                  style="display: flex; justify-content: space-between"
+                >
+                  collection <i class="fa-solid fa-angle-down angle-d"></i>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <li>shop all</li>
+                    <li>tops & boluses</li>
+                    <li>tees</li>
+                    <li>pants</li>
+                    <li>jackets & outwears</li>
+                    <li>pullovers</li>
+                    <li>dresses & jumpsuits</li>
+                    <li>short & skirts</li>
+                  </ul>
+                </div>
+                <hr />
+                <div
+                  class="accordion"
+                  style="display: flex; justify-content: space-between"
+                >
+                  collection <i class="fa-solid fa-angle-down angle-d"></i>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <li>shop all</li>
+                    <li>tops & boluses</li>
+                    <li>tees</li>
+                    <li>pants</li>
+                    <li>jackets & outwears</li>
+                    <li>pullovers</li>
+                    <li>dresses & jumpsuits</li>
+                    <li>short & skirts</li>
+                  </ul>
+                </div>
+                <hr />
+                <div
+                  class="accordion"
+                  style="display: flex; justify-content: space-between"
+                >
+                  collection <i class="fa-solid fa-angle-down angle-d"></i>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <li>shop all</li>
+                    <li>tops & boluses</li>
+                    <li>tees</li>
+                    <li>pants</li>
+                    <li>jackets & outwears</li>
+                    <li>pullovers</li>
+                    <li>dresses & jumpsuits</li>
+                    <li>short & skirts</li>
+                  </ul>
+                </div>
+                <hr />
+
+                <div style="display: flex; justify-content: space-between">
+                  <div>login</div>
+                  <div>sign up</div>
+                </div>
+              </div>
+            </nav>
           </div>
         </header>
         <!-- hearder-End-here -->
@@ -413,7 +603,7 @@
             class="Best-seller pl-[12px] pr-[16px] lg:pl-[116px] lg:pr-[116px]"
           >
             <!-- title-button- -->
-            <div class="tittle-best-seller  flex justify-between items-center">
+            <div class="tittle-best-seller flex justify-between items-center">
               <h3
                 class="text-[20px] lg:text-[32px] font-[700] lg:font-[600] text-[#0C0C0C]"
               >
@@ -432,7 +622,7 @@
             >
               <!-- ===========================CARD-1 -->
               <div
-                class=" b-card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
+                class="b-card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -490,7 +680,7 @@
               </div>
               <!-- CARD-2 -->
               <div
-                class=" b-card hidden silk-card hidde card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
+                class="b-card hidden silk-card hidde card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -549,7 +739,7 @@
 
               <!-- CARD-3 -->
               <div
-                class=" b-card hidden sm:block card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
+                class="b-card hidden sm:block card w-[160px] min-h-[333px] sm:w-[230px] md:!min-w-[235px] sm:h-[350px] lg:!w-[245px] xl:!min-w-[334px] 2xl:!w-[392px] lg:h-[540px]"
               >
                 <div
                   class="image-div max-w-[392px] relative h-[263px] md:h-[280px] lg:h-[438px] z-[-1]"
@@ -979,7 +1169,7 @@
 
         <!-- footer -->
         <footer
-          class=" bg-[#404040] grid items-center text-white  lg:pl-[107px] pr-[16px] pl-[12px] lg:min-h-[417px] lg:pr-[110px] md:px-6"
+          class="bg-[#404040] grid items-center text-white lg:pl-[107px] pr-[16px] pl-[12px] lg:min-h-[417px] lg:pr-[110px] md:px-6"
         >
           <div class="mt-[20px]">
             <div
@@ -987,7 +1177,9 @@
             >
               <!-- Club Signup Section -->
               <div class="lg:flex flex-col gap-[21px] xl:w-[490px]">
-                <h3 class=" mt-[10px] text-[15px] font-[600] lg:text-[20px]  lg:font-[700]">
+                <h3
+                  class="mt-[10px] text-[15px] font-[600] lg:text-[20px] lg:font-[700]"
+                >
                   Join Our Club, Get 15% Off For Your Birthday
                 </h3>
                 <form class="flex items-center space-x-2 mt-[10px]">
@@ -997,12 +1189,14 @@
                       type="email"
                       placeholder="Enter Your Email Address"
                     />
-                    <button class="p-2 rounded"  >→</button>
+                    <button class="p-2 rounded">→</button>
                   </div>
                 </form>
-                <div class="flex mt-[10px] mb-[6px] lg:mb-[0px] items-start space-x-2">
+                <div
+                  class="flex mt-[10px] mb-[6px] lg:mb-[0px] items-start space-x-2"
+                >
                   <input type="checkbox" class="mt-1" />
-                  <p class=" text-[12px] font-[400] lg:font-[600]">
+                  <p class="text-[12px] font-[400] lg:font-[600]">
                     By submitting your email, you agree to receive advertising
                     emails from Modimal.
                   </p>
@@ -1012,8 +1206,12 @@
               <div class="link-div mt-[10px] flex justify-between flex-wrap">
                 <!-- About Modimal -->
                 <div class="mt-1 sm:mt-0">
-                  <h4 class=" text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2">About Modimal</h4>
-                  <ul class="space-y-1 about ">
+                  <h4
+                    class="text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2"
+                  >
+                    About Modimal
+                  </h4>
+                  <ul class="space-y-1 about">
                     <li><a href="#" class="hover:underline">Collection</a></li>
                     <li>
                       <a href="#" class="hover:underline">Sustainability</a>
@@ -1034,8 +1232,12 @@
                 </div>
 
                 <!-- Help & Support -->
-                <div class=" mt-1 sm:mt-0">
-                  <h4 class=" text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2 ">Help & Support</h4>
+                <div class="mt-1 sm:mt-0">
+                  <h4
+                    class="text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2"
+                  >
+                    Help & Support
+                  </h4>
                   <ul class="space-y-2">
                     <li>
                       <a href="#" class="hover:underline">Orders & Shipping</a>
@@ -1049,8 +1251,12 @@
                 </div>
 
                 <!-- Join Up -->
-                <div class=" mt-1 sm:mt-0">
-                  <h4 class=" text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2 ">Join Up</h4>
+                <div class="mt-1 sm:mt-0">
+                  <h4
+                    class="text-[16px] font-[600] lg:text-[20px] lg:font-[700] mb-2"
+                  >
+                    Join Up
+                  </h4>
                   <ul class="space-y-2">
                     <li>
                       <a href="#" class="hover:underline">Modimal Club</a>
@@ -1066,7 +1272,7 @@
             <div
               class="flex flex-col items-center sm:flex-row justify-between mt-8 -t -gray-700 pt-4"
             >
-              <div class="flex items-center sm:items-start flex-col ">
+              <div class="flex items-center sm:items-start flex-col">
                 <div class="socal flex gap-[10px]">
                   <a href="#"
                     ><img
@@ -1087,9 +1293,9 @@
                     ><img src="./Images/tktok.png" alt="TikTok" class="h-6"
                   /></a>
                 </div>
-                <div class=" mt-[5px] lg:mt-[40px]" style="margin-left: 0px">
+                <div class="mt-[5px] lg:mt-[40px]" style="margin-left: 0px">
                   <p class="mt-4 lg:mt-0 text-sm flex gap-[4px] items-center">
-                    <span><img src="./Images/copyright.png"  alt="" /></span>2023
+                    <span><img src="./Images/copyright.png" alt="" /></span>2023
                     Modimal. All Rights Reserved.
                   </p>
                 </div>
@@ -1102,5 +1308,51 @@
       <!-- end -->
     </div>
     <!-- main-container -->
+    <script>
+      const humb = document.querySelector(".humburger-tab ");
+      const fb = document.querySelector(".fb");
+
+      function openNav() {
+        fb.style.display="none"
+        if (window.innerWidth <= 768) {
+          fb.style.display = "flex";
+          const sidebar = document.getElementById("mySidenav");
+          sidebar.style.width = "350px";
+          sidebar.style.paddingLeft = "10px";
+          sidebar.style.paddingRight = "10px";
+          sidebar.style.borderRight = "1px solid white";
+          humb.style.display = "none";
+        }
+      }
+
+      function closeNav() {
+        fb.style.display = "none";
+        const sidebar = document.getElementById("mySidenav");
+        sidebar.style.width = "0";
+        sidebar.style.paddingLeft = "0px";
+        sidebar.style.paddingRight = "0px";
+        sidebar.style.borderRight = "none";
+        humb.style.display = "block";
+      }
+
+      // acroordian code
+
+      var acc = document.getElementsByClassName("accordion");
+      var angle = document.getElementsByClassName("angle-d");
+      var i;
+      console.log(angle);
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      angle.style.color = "red";
+    </script>
   </body>
 </html>
