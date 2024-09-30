@@ -392,8 +392,42 @@
         list-style: none;
         height: 20px;
         margin: 10px;
-        
       }
+    }
+
+
+    /* drop-down-navbar */
+    .collection:hover + .collection-div {
+      display: grid;
+    }
+    .links:hover .collection-div {
+      display: grid;
+    }
+
+    .collection-div:hover {
+      display: grid;
+    }
+    .collection-div {
+      transition:  0.3s ease;
+    }
+
+    .links:hover {
+      color: black;
+    }
+
+    .drop-div {
+      text-align: start;
+    }
+    .drop-div h6 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #0c0c0c;
+    }
+    .drop-div ul li {
+      /* border: 1px solid black; */
+      margin-bottom: 10px;
+      line-height: px;
     }
   </style>
 
@@ -401,7 +435,7 @@
   <body class="">
     <div class="main-containe">
       <!-- start here -->
-      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1570px mx-auto">
+      <div class="p-[0px] m-[0px] font-[Montserrat] max-w-[1920px] mx-auto">
         <!-- header-section -->
         <header class="fixed right-[0px] left-[0px] W-[100%] z-20">
           <div
@@ -414,9 +448,9 @@
           >
             <!-- navbar---- -->
             <nav
-              class="h-[50px] md:h-[70px] flex justify-between items-center borde bg-[#FFFFFF]"
+              class="relative h-[50px] z-[999] md:h-[70px] flex justify-between items-center borde bg-[#FFFFFF]"
             >
-              <div class="humburger-tab md:hidden">
+              <div class="humburger-tab  md:hidden">
                 <a href="#">
                   <img
                     src="./Images/Style=Two Tone.png"
@@ -444,20 +478,522 @@
               <div
                 class="hidden md:flex nav-links text-[11px] text-[#404040] lg:text-[13px] xl:text-[18px] font-[400] items-center gap-[9px] lg:gap-[24px]"
               >
-                <div class="links link-1">
+                <div class="links collection link-1">
                   <a href="#">Collection</a>
+                  <div
+                    class="hidden collection-div absolute grid grid-cols-2 top-[50px] h-[450px] right-[-7rem] collection w-screen"
+                  >
+                    <div
+                      class="pt-[50px] bg-white pr-4 collection-div pl-[116px] pr-[116px] h-[450px] absolute grid grid-cols-2 top-[20px] h-[4 50px] collection w-screen border"
+                    >
+                      <!-- link-drop-down -->
+                      <div class="link-div-collection grid grid-cols-3">
+                        <div class="drop-div collection">
+                          <h6>Category</h6>
+                          <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Boluses & Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Dresses & Jumpsuits</a></li>
+                            <li><a href="#">Outwear & Jackets</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Shorts & Skirts</a></li>
+                          </ul>
+                        </div>
+                        <div class="drop-div feature">
+                          <h6>Featured</h6>
+                          <ul>
+                            <li><a href="#">New In</a></li>
+                            <li><a href="#">Modiweek</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                          </ul>
+                        </div>
+                        <div class="drop-div more">
+                          <h6>More</h6>
+                          <ul>
+                            <li><a href="#">Bundles</a></li>
+                            <li><a href="#">Occasion Wear</a></li>
+                            <li><a href="#">Matching Set</a></li>
+                            <li><a href="#">Suiting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- image-div -->
+                      <div
+                        class="image-div-of-dropdown grid grid-cols-2 justify-items-center "
+                      >
+                        <!-- card-one-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/drop-image blouse.png"
+                              class="w-[200px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px]">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400]"
+                              >
+                              Blouses
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- car-2-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/drop-pluse-size.png"
+                              class="w-[200px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px]">
+                              <h6 class="text-[16px] lg:text-[16px] font-[400]">
+                                plus size
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- drop-down-card-3 -->
+                        <div class="hidden">
+                          <div>
+                            <img
+                              src="./Images/Sunday.png"
+                              class="w-[100%] h-[100%] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex items-end sm:h-[55px]"
+                          >
+                            <div class="name lg:gap-[6px] lg:p-2">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[600] lg:font-[700]"
+                              >
+                                Sunday
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="links link-2">
+
+                <div class="links new-in link-2">
                   <a href="#">New In</a>
+                  <div
+                    class="hidden collection-div absolute grid grid-cols-2 top-[50px] h-[450px] right-[-7rem] collection w-screen"
+                  >
+                    <div
+                      class="pt-[50px] bg-white pr-4 collection-div pl-[116px] pr-[116px] h-[450px] absolute grid grid-cols-2 top-[20px] h-[4 50px] collection w-screen border"
+                    >
+                      <!-- link-drop-down -->
+                      <div class="link-div-collection grid grid-cols-3">
+                        <div class="drop-div collection">
+                          <h6>Category</h6>
+                          <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Tops & Bolusesp</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Outwear & Jackets</a></li>
+                            <li><a href="#">Pullovers</a></li>
+                            <li><a href="#">Dresses & Jumpsuits</a></li>
+                          </ul>
+                        </div>
+                        <div class="drop-div feature">
+                          <h6>Trending </h6>
+                          <ul>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Fall Collection</a></li>
+                            <li><a href="#">Modiweek</a></li>
+                          </ul>
+                        </div>
+                        <div class=" hidden drop-div more">
+                          <h6>More</h6>
+                          <ul>
+                            <li><a href="#">Bundles</a></li>
+                            <li><a href="#">Occasion Wear</a></li>
+                            <li><a href="#">Matching Set</a></li>
+                            <li><a href="#">Suiting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- image-div -->
+                      <div
+                        class=" image-div-of-dropdown grid grid-cols-3 gap-[10px]"
+                      >
+                        <!-- card-one-drop-down -->
+                        <div class=" ">
+                          <div>
+                            <img
+                              src="./Images/drop-fall colection.png"
+                              class="w-[200px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex  "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                              Fall Collection
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- car-2-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/fall-2-drop.png"
+                              class="w-[200px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                              Boluses
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- drop-down-card-3 -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/fall-3-drop.png"
+                              class="w-[200px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex"
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400]"
+                              >
+                              Dresses
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="links link-3">
+                <div class="links modiweek link-3">
                   <a href="#">Modiweek</a>
+                  <div
+                    class="hidden collection-div absolute grid grid-cols-2 top-[50px] h-[450px] right-[-7rem] collection w-screen"
+                  >
+                    <div
+                      class="pt-[50px] bg-white pr-4 collection-div pl-[116px] pr-[116px] h-[450px] absolute grid grid-cols-2 top-[20px] h-[4 50px] collection w-screen border"
+                    >
+                      <!-- link-drop-down -->
+                      <div class="link-div-collection grid grid-cols-3">
+                        <div class="drop-div collection">
+                          <h6>Category</h6>
+                          <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Boluses & Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Dresses & Jumpsuits</a></li>
+                            <li><a href="#">Outwear & Jackets</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Shorts & Skirts</a></li>
+                          </ul>
+                        </div>
+                        <div class=" hidden drop-div feature">
+                          <h6>Featured</h6>
+                          <ul>
+                            <li><a href="#">New In</a></li>
+                            <li><a href="#">Modiweek</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                          </ul>
+                        </div>
+                        <div class=" hidden drop-div more">
+                          <h6>More</h6>
+                          <ul>
+                            <li><a href="#">Bundles</a></li>
+                            <li><a href="#">Occasion Wear</a></li>
+                            <li><a href="#">Matching Set</a></li>
+                            <li><a href="#">Suiting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- image-div -->
+                      <div
+                        class="image-div-of-dropdown grid grid-cols-3 gap-[10px]"
+                      >
+                        <!-- card-one-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/pant-1-drop.png"
+                              class="w-[210px] h-[300px] object-cover "
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                              Pants
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- car-2-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/pant-3-drop.png"
+                              class="w-[210px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex items-end"
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                              Dresses
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- drop-down-card-3 -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/pant-2-drop.png"
+                              class="w-[210px] h-[300px] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px] lg:p-2">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                              Blouses
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="links link-4">
+                <div class="links plues-size link-4">
                   <a href="#">Plus Size</a>
+                  <div
+                    class="hidden collection-div absolute grid grid-cols-2 top-[50px] h-[450px] right-[-7rem] collection w-screen"
+                  >
+                    <div
+                      class="pt-[50px] bg-white pr-4 collection-div pl-[116px] pr-[116px] h-[450px] absolute grid grid-cols-2 top-[20px] h-[4 50px] collection w-screen border"
+                    >
+                      <!-- link-drop-down -->
+                      <div class="link-div-collection grid grid-cols-3">
+                        <div class="drop-div collection">
+                          <h6>Category</h6>
+                          <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Boluses & Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Dresses & Jumpsuits</a></li>
+                            <li><a href="#">Outwear & Jackets</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Shorts & Skirts</a></li>
+                          </ul>
+                        </div>
+                        <div class="drop-div feature">
+                          <h6>Featured</h6>
+                          <ul>
+                            <li><a href="#">New In</a></li>
+                            <li><a href="#">Modiweek</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                          </ul>
+                        </div>
+                        <div class="drop-div more">
+                          <h6>More</h6>
+                          <ul>
+                            <li><a href="#">Bundles</a></li>
+                            <li><a href="#">Occasion Wear</a></li>
+                            <li><a href="#">Matching Set</a></li>
+                            <li><a href="#">Suiting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- image-div -->
+                      <div
+                        class="image-div-of-dropdown grid grid-cols-3 gap-[10px]"
+                      >
+                        <!-- card-one-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/Sunday.png"
+                              class="w-[100%] h-[100%] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                                Sunday
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- car-2-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/Sunday.png"
+                              class="w-[100%] h-[100%] object-cover "
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex items-end "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                                Monday
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- drop-down-card-3 -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/Sunday.png"
+                              class="w-[100%] h-[100%] object-cover "
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                          <div
+                            class="title-name modiweek-title flex "
+                          >
+                            <div class="name lg:gap-[6px] ">
+                              <h6
+                                class="text-[14px] lg:text-[16px] font-[400] "
+                              >
+                                Tuesday
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="links link-5">
+                <div class="links sustainability link-5">
                   <a href="#">Sustainability</a>
+                  <div
+                    class="hidden collection-div absolute grid grid-cols-2 top-[50px] h-[450px] right-[-7rem] collection w-screen"
+                  >
+                    <div
+                      class="pt-[50px] bg-white pr-4 collection-div pl-[116px] pr-[116px] h-[450px] absolute grid grid-cols-2 top-[20px] h-[4 50px] collection w-screen border"
+                    >
+                      <!-- link-drop-down -->
+                      <div class="link-div-collection grid grid-cols-3">
+                        <div class="drop-div collection">
+                          <h6>sustainability </h6>
+                          <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Boluses & Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Dresses & Jumpsuits</a></li>
+                            <li><a href="#">Outwear & Jackets</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Shorts & Skirts</a></li>
+                          </ul>
+                        </div>
+                        <div class=" hidden drop-div feature">
+                          <h6>Featured</h6>
+                          <ul>
+                            <li><a href="#">New In</a></li>
+                            <li><a href="#">Modiweek</a></li>
+                            <li><a href="#">Plus Size</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                          </ul>
+                        </div>
+                        <div class="hidden drop-div more">
+                          <h6>More</h6>
+                          <ul>
+                            <li><a href="#">Bundles</a></li>
+                            <li><a href="#">Occasion Wear</a></li>
+                            <li><a href="#">Matching Set</a></li>
+                            <li><a href="#">Suiting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- image-div -->
+                      <div
+                        class="image-div-of-dropdown grid grid-cols-2 gap-[10px]"
+                      >
+                        <!-- card-one-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/sustain-1.png"
+                              class="w-[100%] h-[100%] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                        </div>
+                        <!-- car-2-drop-down -->
+                        <div class="">
+                          <div>
+                            <img
+                              src="./Images/sustain-2.png"
+                              class="w-[100%] h-[100%] object-cover hidden sm:block"
+                              alt="tailored stretch-cloth"
+                            />
+                          </div>
+                        </div>
+                        <!-- drop-down-card-3 -->
+                        
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -1313,7 +1849,7 @@
       const fb = document.querySelector(".fb");
 
       function openNav() {
-        fb.style.display="none"
+        fb.style.display = "none";
         if (window.innerWidth <= 768) {
           fb.style.display = "flex";
           const sidebar = document.getElementById("mySidenav");
@@ -1326,13 +1862,13 @@
       }
 
       function closeNav() {
+        humb.style.display="block"
         fb.style.display = "none";
         const sidebar = document.getElementById("mySidenav");
         sidebar.style.width = "0";
         sidebar.style.paddingLeft = "0px";
         sidebar.style.paddingRight = "0px";
         sidebar.style.borderRight = "none";
-        humb.style.display = "block";
       }
 
       // acroordian code
